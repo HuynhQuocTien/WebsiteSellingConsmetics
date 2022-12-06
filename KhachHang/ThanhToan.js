@@ -3,11 +3,7 @@ function updata()
     var x=0;
     var key=false;
     var GioHang = JSON.parse(localStorage.getItem('GioHang'));
-<<<<<<< Updated upstream
-    var DuyetDonHangtam =  localStorage.getItem('DuyetDonHang') ? JSON.parse(localStorage.getItem('DuyetDonHang')) : [];
-=======
     var DuyetDonHangtam = localStorage.getItem('DuyetDonHang') ? JSON.parse(localStorage.getItem('DuyetDonHang')) : [];
->>>>>>> Stashed changes
     var user =JSON.parse(localStorage.getItem('UserLogin'));
     giohangduyet =new Array();
     var exits= document.getElementsByName('solg');
@@ -100,10 +96,6 @@ function kiemtrakho()
 function Tru_SL(ma,solg){
     var ma;
     var KhoHang = JSON.parse(localStorage.getItem('DSSP'));
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     for(var i=0;i<KhoHang.length;i++){
         if(KhoHang[i].MaSP==ma && KhoHang[i].SoLuong>1){
             sl=Number(KhoHang[i].SoLuong)-Number(solg);
@@ -114,3 +106,7 @@ function Tru_SL(ma,solg){
     KhoHang.push(tam);
     localStorage.setItem("DSSP", JSON.stringify(KhoHang));
 }
+function time(){
+document.getElementById('ngay').value=today();
+}
+time();

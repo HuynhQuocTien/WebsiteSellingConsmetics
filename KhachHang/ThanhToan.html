@@ -521,12 +521,12 @@
             var GioHang = JSON.parse(localStorage.getItem('GioHang'));
             if (GioHang.length!=0)
             { document.write('<div style="float:right ;">'   +
-                '<div style="margin-right: 10px ;"> Tổng Tiền <output id="Tongtien"></output> VNĐ</div>'+
-                '<div> soluong <output id="soluongsp"></output>  </div>'+
+                '<div style="margin-right: 10px ;"> Tổng Tiền: <output id="Tongtien"></output> VNĐ</div>'+
+                '<div> Số lượng: <output id="soluongsp"></output>  </div>'+
                 '</div>'+
                 '<div style="margin-top: 50px;">' +
                 '<div > </div>'+
-                '<div >date</div>'+
+                '<div >Date:<output id="ngay"></output></div>'+
                 '</div>'+
                 '<div class="thanhtoanbutton" onclick="kiemtrakho()" > Thanh toan</div>');}
             else
