@@ -100,7 +100,10 @@ function kiemtrakho()
 function Tru_SL(ma,solg){
     var ma;
     var KhoHang = JSON.parse(localStorage.getItem('DSSP'));
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     for(var i=0;i<KhoHang.length;i++){
         if(KhoHang[i].MaSP==ma && KhoHang[i].SoLuong>1){
             sl=Number(KhoHang[i].SoLuong)-Number(solg);
